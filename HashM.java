@@ -10,6 +10,7 @@ public class HashM {
         map.put("China", 150);
         map.put("US",50);
         map.put("US",80);
+        map.put("Pakistan",10);
         System.out.println(map);
 
         //Searching key----------------------------------------------------------------------------------------------------------
