@@ -25,20 +25,39 @@ public class HashM {
         System.out.println(map.get("China"));          //exist
         System.out.println(map.get("Indonesia"));      //does not exist
 
-        //Itertaion-------------------------------------------------------------------------------------------------------------
-        for(Map.Entry<String,Integer> e : map.entrySet()){
-            System.out.print(e.getKey()+" ");
-            System.out.println(e.getValue());
+        //Iteration Method 1----------------------------------------------------------------------------------------------------
+        for(String Key : map.keySet()){
+            System.out.print(Key+"->"+map.get(Key)+" ");
         }
+        System.out.println();
+
+        //Itertaion Method 2----------------------------------------------------------------------------------------------------
+        for(Map.Entry<String,Integer> e : map.entrySet()){
+            System.out.print(e.getKey()+"--->"+e.getValue()+" ");
+            
+        }
+        System.out.println();
 
         //Remove----------------------------------------------------------------------------------------------------------------
         map.remove("China");
         System.out.println(map);
 
-        System.out.println(map.size());
+        System.out.println(map.size());  // Size of the hashmap
+
+
+        map.putIfAbsent("Pakistan",5 );  // this will not enter
+        map.putIfAbsent("Australia",5 );   // this will enter 
+        System.out.println(map);
+
+        System.out.println(map.keySet()); //give all the keys
+        System.out.println(map.values());  // give all the values
+        System.out.println(map.entrySet());  // give all the Keys along with Values
+
+
 
 
 
     }
     
 }
+   
