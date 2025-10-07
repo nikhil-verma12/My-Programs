@@ -38,6 +38,12 @@ public class HashM {
         }
         System.out.println();
 
+        //Iteration------------------------------------------------------------------------------------------------------------
+        for(var e : map.entrySet()){
+            System.out.print(e.getKey()+"--->>"+e.getValue()+" ");
+
+        }
+
         //Remove----------------------------------------------------------------------------------------------------------------
         map.remove("China");
         System.out.println(map);
